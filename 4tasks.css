@@ -1,0 +1,114 @@
+body {
+    background: #464646 url(background_2.jpg) no-repeat fixed center center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+img {
+    padding-top: 77px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight:bold;
+    margin-bottom: 1rem;
+}
+#taskBar {
+    display: flex;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task-input {
+    flex:1 1 0%;
+    background-color: #e9e5e3;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+#new-task-submit {
+    /* background-color: yellow; */
+    font-size: 1.35rem;
+    font-weight: 800;
+    transition:0.4s;
+   background-image: linear-gradient(to right, yellow,green);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+   cursor: pointer;
+}
+#new-task-submit :hover {
+    opacity: 0.8;
+}
+#new-task-submit :active {
+    opacity: 0.8;
+}
+.task-list {
+    padding: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    font-style: oblique;
+}
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: #374151;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+/* #tasks .task .content .text{
+    color: white;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+} */
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.text {
+    color: white;
+    width: 85%;
+    font-size: 1.5rem;
+}
+.task .actions button {
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.task .actions button :hover {
+    opacity: 0.8;
+}
+.task .actions buttont :active {
+    opacity: 0.8;
+}
+.task .actions .edit {
+    background-image: linear-gradient(to right, rgb(155, 231, 245),white);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+}
+.task .actions .delete {
+    background-image: linear-gradient(to right, red,#a2203f);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+}
